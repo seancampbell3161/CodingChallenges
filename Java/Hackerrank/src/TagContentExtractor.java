@@ -26,11 +26,17 @@ public class TagContentExtractor {
         //Pattern pattern = Pattern.compile("^<(\\w+)>|<(\\w+)>\\w*</\\2></\\1>+$");
         Pattern pattern = Pattern.compile("<(.+)>([^<]+)</\\1>");
         for(int i = 0; i < numOfLines; i++) {
+            boolean matchFound = false;
             String userString = scan.nextLine();
             Matcher matcher = pattern.matcher(userString);
             while(matcher.find()) {
                 System.out.println(matcher.group(2));
+                matchFound = true;
+            }
+            if(!matchFound) {
+                System.out.println("None");
             }
         }
+
     }
 }
