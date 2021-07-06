@@ -2,7 +2,7 @@ import java.util.*;
 
 public class JavaComparator {
 
-    class Student{
+    static class Student{
         private int id;
         private String fname;
         private double cgpa;
@@ -23,7 +23,7 @@ public class JavaComparator {
         }
     }
 
-    class sortStudents implements Comparator<Student> {
+    static class sortStudents implements Comparator<Student> {
 
         @Override
         public int compare(Student s1, Student s2) {
