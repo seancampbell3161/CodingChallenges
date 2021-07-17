@@ -29,7 +29,6 @@ public class SpinWords {
         return String.join(" ", array);
     }
 
-
     public static void main(String[] args) {
 
         SpinWords test = new SpinWords();
