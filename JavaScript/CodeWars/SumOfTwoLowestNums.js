@@ -10,3 +10,13 @@ function sumTwoSmallestNumbers(numbers) {
 function compare(a, b) {
     return a - b;
   }
+
+
+  /* Better Solution
+
+  function sumTwoSmallestNumbers(numbers) {
+      let [a, b] = numbers.sort((a, b) => a - b);
+      return a + b;
+  }
+
+  */
